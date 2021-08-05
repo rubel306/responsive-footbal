@@ -79,6 +79,9 @@ a.btn{
     margin-top: 0;
     margin-bottom: 16px;
 }
+.btn span {
+    margin-left: 16px;
+}
 
 /* Footer styles  */
 .footer-area {
