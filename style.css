@@ -48,7 +48,6 @@ header {
     padding-top: 40px;
     padding-bottom: 85px;
 }
-}
 .menu-area {
     display: flex;
     justify-content: space-between;
@@ -129,6 +128,29 @@ header {
     margin-left: 16px;
 }
 
+/* Last Match Result Styles  */
+.last-match-result{
+   padding-top: 0;
+   padding-bottom: 150px;
+}
+
+section.last-match-result h2 {
+    text-align: center;
+    font-size: 64px;
+    line-height: 80px;
+    color: #000;
+    margin-bottom: 60px;
+}
+.team img {
+    width: 200px;
+}
+
+.last-match {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
 /* Footer styles  */
 .footer-area {
     display: flex;
@@ -154,4 +176,43 @@ header {
 .copyright {
     color: #000;
     font-size: 18px;
+}
+
+
+/* Media queries  */
+
+@media only screen and (max-width:768px){
+    
+    .container{
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+    .banner-text, .highlight-texts {
+        margin-bottom: 50px;
+    }
+    .banner-text h2, section.last-match-result h2{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .banner-img, .highlight-, .footer-logo, .highlight-img{
+        text-align: center;
+    }
+    .banner-img img, .highlight-img img, .footer-logo img{
+        width: 70%;
+    }
+    .header-banenr, .players, .highlights, .menu ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .team img{
+        width: 100px;
+    }
+    .highlights{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .last-match-result{
+        padding-bottom: 30px;
+    }
 }
